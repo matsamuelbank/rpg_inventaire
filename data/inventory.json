@@ -13,7 +13,7 @@
     "type": "Arme",
     "rarity": "Légendaire",
     "description": "Une épée forgée dans les flammes des étoiles, capable de trancher même les ténèbres les plus profondes",
-    "quantity": 1
+    "quantity": "4"
   },
   {
     "id": 4,
@@ -21,7 +21,7 @@
     "type": "Bouclier",
     "rarity": "Rare",
     "description": "Un bouclier enchanté qui reflète la lumière du soleil, offrant une protection contre les attaques magiques.",
-    "quantity": 1
+    "quantity": "3"
   },
   {
     "id": 5,
@@ -45,7 +45,7 @@
     "type": "Armure",
     "rarity": "Légendaire",
     "description": "Une cape qui rend son porteur invisible pendant une courte durée.",
-    "quantity": 1
+    "quantity": "15"
   },
   {
     "id": 8,
@@ -53,6 +53,6 @@
     "type": "Livre",
     "rarity": "Rare",
     "description": "Un livre ancien contenant des sorts puissants et oubliés.",
-    "quantity": 1
+    "quantity": "9"
   }
 ]

@@ -71,16 +71,16 @@ export default function Home() {
     }
   };
 
-  // Fonction de filtrage des objets en fonction des critères sélectionnés
-  const handleFilter = (type: string, rarity: string, minQuantity: number) => {
+  const handleFilter = (type: string, rarity: string, maxQuantity: number | undefined) => {
     const filtered = inventory.filter(item =>
       (type ? item.type.includes(type) : true) &&
       (rarity ? item.rarity.includes(rarity) : true) &&
-      (minQuantity ? item.quantity >= minQuantity : true)
+      (maxQuantity !== undefined ? item.quantity <= maxQuantity : true)
     );
     setFilteredInventory(filtered);
   };
-
+  
+  
   // Fonction pour supprimer un objet
   const handleDelete = async (itemId: number) => {
     if (!window.confirm('Voulez-vous vraiment supprimer cet objet ?')) {

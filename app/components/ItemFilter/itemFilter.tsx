@@ -1,18 +1,18 @@
 import { useState } from 'react';
 
 interface ItemFilterProps {
-  onFilter: (type: string, rarity: string, minQuantity: number) => void;
+  onFilter: (type: string, rarity: string, maxQuantity: number | undefined) => void;
 }
 
 export default function ItemFilter({ onFilter }: ItemFilterProps) {
   // États locaux pour stocker les valeurs des filtres
   const [type, setType] = useState<string>('');
   const [rarity, setRarity] = useState<string>('');
-  const [minQuantity, setMinQuantity] = useState<number>(0);
+  const [maxQuantity, setMaxQuantity] = useState<number | undefined>(undefined);
 
   // Fonction pour appliquer les filtres
   const handleFilter = () => {
-    onFilter(type, rarity, minQuantity);
+    onFilter(type, rarity, maxQuantity);
   };
 
   return (
@@ -44,15 +44,15 @@ export default function ItemFilter({ onFilter }: ItemFilterProps) {
         />
       </div>
 
-      {/* Champ de saisie pour filtrer par quantité minimale */}
+      {/* Champ de saisie pour filtrer par quantité maximale */}
       <div className="mb-4">
-        <label className="block text-gray-700">Quantité Minimale</label>
+        <label className="block text-gray-700">Quantité Maximale</label>
         <input
           type="number"
-          value={minQuantity}
-          onChange={(e) => setMinQuantity(Number(e.target.value))}
+          value={maxQuantity !== undefined ? maxQuantity : ''}
+          onChange={(e) => setMaxQuantity(e.target.value === '' ? undefined : Number(e.target.value))}
           className="w-full border p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-400 text-gray-400"
-          placeholder="Filtrer par quantité"
+          placeholder="Filtrer par quantité maximale"
         />
       </div>
 
