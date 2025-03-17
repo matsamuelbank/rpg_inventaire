@@ -20,7 +20,7 @@ const ensureFileExists = () => {
   }
 };
 
-// Gestionnaire pour la méthode GET
+// Gestionnaire pour la méthode 
 export async function GET(request: NextRequest) {
   try {
     ensureFileExists();
