@@ -1,7 +1,7 @@
 [
   {
     "id": 2,
-    "name": "Potion de soin",
+    "name": "Potion de soin mag",
     "type": "Consommable",
     "rarity": "Commun",
     "description": "Une potion qui restaure la santé.",
