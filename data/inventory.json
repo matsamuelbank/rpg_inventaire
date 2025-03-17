@@ -1,0 +1,58 @@
+[
+  {
+    "id": 2,
+    "name": "Potion de soin",
+    "type": "Consommable",
+    "rarity": "Commun",
+    "description": "Une potion qui restaure la santé.",
+    "quantity": "20"
+  },
+  {
+    "id": 3,
+    "name": "Épée de Lumière",
+    "type": "Arme",
+    "rarity": "Légendaire",
+    "description": "Une épée forgée dans les flammes des étoiles, capable de trancher même les ténèbres les plus profondes",
+    "quantity": 1
+  },
+  {
+    "id": 4,
+    "name": "Bouclier de l'Aube",
+    "type": "Bouclier",
+    "rarity": "Rare",
+    "description": "Un bouclier enchanté qui reflète la lumière du soleil, offrant une protection contre les attaques magiques.",
+    "quantity": 1
+  },
+  {
+    "id": 5,
+    "name": "Anneau de Mana",
+    "type": "Accessoire",
+    "rarity": "Épique",
+    "description": "Un anneau qui augmente la régénération de mana de son porteur.",
+    "quantity": 2
+  },
+  {
+    "id": 6,
+    "name": "Potion de Force",
+    "type": "Consommable",
+    "rarity": "Commun",
+    "description": "Une potion qui augmente temporairement la force physique.",
+    "quantity": 10
+  },
+  {
+    "id": 7,
+    "name": "Cape d'Invisibilité",
+    "type": "Armure",
+    "rarity": "Légendaire",
+    "description": "Une cape qui rend son porteur invisible pendant une courte durée.",
+    "quantity": 1
+  },
+  {
+    "id": 8,
+    "name": "Grimoire des Arcanes",
+    "type": "Livre",
+    "rarity": "Rare",
+    "description": "Un livre ancien contenant des sorts puissants et oubliés.",
+    "quantity": 1
+  }
+]
